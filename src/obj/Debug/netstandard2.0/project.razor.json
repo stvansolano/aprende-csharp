@@ -1,0 +1,56 @@
+{
+  "FilePath": "/Users/stvansolano/dev/demos/aprende-csharp/src/blazor-web.csproj",
+  "Configuration": {
+    "ConfigurationName": "Default",
+    "LanguageVersion": "3.0",
+    "Extensions": []
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 703
+  },
+  "RootNamespace": "blazor-web",
+  "Documents": [
+    {
+      "FilePath": "Pages/Index.razor",
+      "TargetPath": "Pages/Index.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "_Imports.razor",
+      "TargetPath": "_Imports.razor",
+      "FileKind": "componentImport"
+    },
+    {
+      "FilePath": "App.razor",
+      "TargetPath": "App.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "Shared/MainLayout.razor",
+      "TargetPath": "Shared/MainLayout.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "Pages/Counter.razor",
+      "TargetPath": "Pages/Counter.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "Pages/FetchData.razor",
+      "TargetPath": "Pages/FetchData.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "Shared/NavMenu.razor",
+      "TargetPath": "Shared/NavMenu.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "Shared/SurveyPrompt.razor",
+      "TargetPath": "Shared/SurveyPrompt.razor",
+      "FileKind": "component"
+    }
+  ],
+  "SerializationFormat": "0.2"
+}
