@@ -15,5 +15,13 @@
 - Editor en linea. [Link](https://dotnet.microsoft.com/platform/try-dotnet)
 - Editor para el equipo. [Link](https://code.visualstudio.com/download)
 
-(Link a .NET Core SDK](https://dotnet.microsoft.com/download)
-  
+[Link a .NET Core SDK](https://dotnet.microsoft.com/download)
+
+### DotNet Try (contenidos)
+
+`dotnet tool install --global dotnet-try`
+
+- `cd material`
+- `cd dotnet-try`
+- `dotnet try`
+
