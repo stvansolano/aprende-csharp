@@ -1,121 +1,126 @@
-Tutorial
+# Tutorial
 --------
 
-For loops are very similar to for loops in C, They are defined like this:
+Los bucles For son muy similares a los bucles for en C, se definen así:
 
-    for( [variable to count iterations] ; [conditions checked for] ; [code to execute every loop])
-    {
-    
-    }
+```
+for( [variable contadora de iteraciones] ; [condicion a evaluar] ; [codigo a ejecutarse por iteracion])
+{
+    //
+}
+```
 
-E.G:
+Ejemplo:
 
-    int i;
+```
+int i;
 
-    for( i = 0; i < 10; i++)
-    {
+for( i = 0; i < 10; i++)
+{
+    //
+}
+```
 
-    }
-
-This would loop until i is no longer less than ten, increasing i by one each time.
-However unlike C, C# does allow you to declare the variable you are using as to count iterations in the for loop:
+Esto se repetirá hasta que ya no sea inferior a 10, aumentando `i` en 1 cada vez.
+Sin embargo, a diferencia de C, C# le permite declarar la variable que está utilizando para contar las iteraciones en el bucle for:
 
     for( int i = 0; i < 10; i++)
 
-For loops are used to allow you to repeat sections of code a fixed, or variable amount of times.
-This allows you to make your code more compact and clean.
+Los bucles `For` se utilizan para permitirle repetir secciones de código una cantidad de veces fija o variable.
 
-There are several statements you can use to control a loop:
+Esto le permite hacer su código más compacto y limpio.
+
+Hay varias declaraciones que puede usar para controlar un ciclo:
 
     break;
 
-This allows you to exit a loop without finishing the loop.
+Esto le permite salir de un bucle sin terminarlo.
 
-E.G
+Ejemplo
 
-    for(int i = 0; i < 16; i++)
+```
+for(int i = 0; i < 16; i++)
+{
+
+    if(i == 12)
     {
+        break;    
+    }
+}
+```
 
-        if(i == 12)
-        {
-            break;    
-        }
+Para terminar anticipadamente el bucle cuando el valor es 12 se utiliza el `break`, no cuando el bucle generalmente termine.
+
+Para "saltar" o continuar o saltar a la siguiente iteracion, se utiliza `continue`.
+
+Ejemplo:
+
+```
+for(int i = 0; i < 16; i++)
+{
+    if(i % 2 == 1)
+    {
+        continue;
     }
 
-Exit the loop when i is 12, not when the loop would usually finish
+    Console.WriteLine(i);   
+}
+```
 
-    continue;
+## Codigo del tutorial
+-------------------
 
-This allows you to skip straight to the next iteration
+```
 
-    for(int i = 0; i < 16; i++)
+using System;
+
+public class Functions
+{
+    public static void Main()
     {
-    
-        if(i % 2 == 1)
-        {
-            continue;
-        }
-    
-        Console.WriteLine(i);
-    
+        string x = "Hi";
+        int n = 10;
+
+        // Escribir el ciclo aca
     }
 
-Print only the even numbers by skipping the interactions where i is odd.
+}
+```
 
-Exercise
---------
-
-Print the value of variable X to the screen N number of times
-
-Tutorial Code
--------------
-
-
-    using System;
-
-    public class Functions
-    {
-        public static void Main()
-        {
-            string x = "Hi";
-            int n = 10;
-
-            // write for loop here
-        }
-
-    }
-
-
-Expected Output
+## Salida esperada
 ---------------
 
-    Hi
-    Hi
-    Hi
-    Hi
-    Hi
-    Hi
-    Hi
-    Hi
-    Hi
-    Hi
+```
 
-Solution
+    Hola
+    Hola
+    Hola
+    Hola
+    Hola
+    Hola
+    Hola
+    Hola
+    Hola
+    Hola
+```
+
+## Solucion
 --------
 
-    using System;
+```
+using System;
 
-    public class Functions
+public class Functions
+{
+    public static void Main()
     {
-        public static void Main()
+        string x = "Hi";
+        int n = 10;
+
+        for( int i = 0; i < n; i++)
         {
-            string x = "Hi";
-            int n = 10;
-
-            for( int i = 0; i < n; i++)
-            {
-                Console.WriteLine(x);
-            }
+            Console.WriteLine(x);
         }
-
     }
+}
+```
